@@ -18,6 +18,7 @@ import { Habit } from '../habit';
   styles: [],
 })
 export class HabitListComponent implements OnInit {
+  
   habits!: Observable<Habit[]>;
 
   constructor(private habitService: HabitService) {}
