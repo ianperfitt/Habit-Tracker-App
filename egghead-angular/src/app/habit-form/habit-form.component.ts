@@ -18,10 +18,8 @@ import { FormBuilder } from '@angular/forms';
   ],
 })
 export class HabitFormComponent implements OnInit {
-
   habitForm: any;
   @Output() addHabit = new EventEmitter<any>();
-  
   constructor(private formBuilder: FormBuilder) {
     this.habitForm = this.formBuilder.group({
       title: '',
